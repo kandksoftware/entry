@@ -29,6 +29,11 @@
       name:'Macro Router CNC',
       desc:' - use a power of macro for CNC routers',
       link:'https://kandksoftware.github.io/macro-terminal-pro/'
+    },{
+      image:'mobile_cam_icon',
+      name:'Mobile CAM CNC',
+      desc:' - a fast CNC program generator',
+      link:'https://mobilecamcnc.github.io/products/'
     }]
     
     function template(o){
