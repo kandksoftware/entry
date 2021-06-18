@@ -1,122 +1,176 @@
-
-*{
-  box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html,
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  margin:0;
-  counter-reset: section; 
-  background-color: #f1f1f1;
-}
-
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  font-size: 18px;
-  color: red;
-  width: 80%;
-}
-
-.hide{
+.hide {
   display: none;
 }
 
-#app{
-  position: absolute;
-  padding: 20px 5px;
-  height: 100%;
+.items {
+  position: fixed;
+  background-color: #f1f1f1;
   width: 100%;
+  height: calc(100% - 100px);
+  top: 50px;
   overflow: auto;
+  padding: 5px;
 }
 
-#app-entry{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+.items__item {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #fff;
+  margin-bottom: 5px;
   padding: 10px;
+  color: #000;
+  border-radius: 5px;
+}
+
+.items__item:hover {
+  cursor: pointer;
+}
+
+.items > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items > div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+.items > div h4 {
+  color: #595959;
+  font-weight: 200;
+}
+
+.nav__title {
+  color: dodgerblue;
+  position: relative;
+}
+
+.nav__title::after {
+  position: absolute;
+  content: '\00a9';
+  top: -2px;
+  right: -10px;
+  font-size: 12px;
+  color: #bfbfbf;
 }
 
 @media screen and (min-width: 768px) {
-  #app-entry{
-    width: 50%;
+  .items__item {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.app-margin-bottom-5px{
-  margin-bottom: 5px;
+@media screen and (min-width: 1024px) {
+  .items__item {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-#app-entry a{
-  position: relative;
-}
-
-.app-item{
-  width: 100%;
-  padding: 5px;
-  background-color: lightGray;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: fixed;
+  height: 50px;
   background-color: #fff;
-  height: 85px;
-  border-radius: 5px;
-  border: 1px solid lightGray;
-}
-
-.app-item::after{
-  clear: both;
-}
-
-.app-float{
-  float: left;
-  height: 100%;
-  width: 50%;
-}
-
-.app-icon-container{
-  width: 75px;
-}
-
-.app-icon-container img{
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #737373;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
 }
 
-.app-description-container{
-  width: calc(100% - 75px);
-  font-size: 18px;
-  text-decoration: none;
+footer .date {
+  margin-right: 5px;
+}
+
+@font-face {
+  font-family: proxima_nova;
+  src: url("../resources/fonts/Proxima Nova Alt Light.otf");
+}
+
+body {
+  background-color: #fff;
   color: #000;
-  position: relative;
+  font-family: proxima_nova;
 }
 
-.app-description-center{
-  position: absolute;
-  left: 50%;
-  top:50%;
-  transform: translate(-50%,-50%);
+header {
+  position: fixed;
+  z-index: 2;
   width: 100%;
-  padding: 5px 5px 5px 15px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  color: #000;
 }
 
-h2{
-  color: dodgerblue;
+noscript {
+  position: fixed;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.bold{
-  font-weight: bold;
+noscript h1, noscript h4 {
+  color: #737373;
 }
 
-
-
-
-
-  
+noscript h4 {
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
