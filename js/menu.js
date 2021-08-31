@@ -43,7 +43,7 @@
   },{
     name:'Mobile CAM CNC',
     img:'mobile_cam_icon',
-    desc:'a fast CNC program generator',
+    desc:'the fastest and easiest conversation software for Fanuc / Haas',
     link:'https://mobilecamcnc.github.io/products/'
   }])
 })();
