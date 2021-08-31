@@ -23,7 +23,7 @@
   },{
     name:'Macro Mill Plus CNC',
     img:'macro-mill-icon',
-    desc:'powerful 3D simulator',
+    desc:'he most modern and secure software to speed up your work and improve safety',
     link:'https://kandksoftware.github.io/macro-mill-plus-cnc/'
   },{
     name:'Macro Lathe CNC',
