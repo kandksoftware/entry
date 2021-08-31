@@ -12,7 +12,7 @@
     },{
       image:'macro-mill-icon',
       name:'Macro Mill Plus CNC',
-      desc:' - powerful 3D simulator',
+      desc:' - the most modern and secure software to speed up your work and improve safety',
       link:'https://kandksoftware.github.io/macro-mill-plus-cnc/'
     },{
       image:'macro-lathe-icon',
@@ -32,7 +32,7 @@
     },{
       image:'mobile_cam_icon',
       name:'Mobile CAM CNC',
-      desc:' - a fast CNC program generator',
+      desc:' - the fastest and easiest conversational software for Fanuc / Haas',
       link:'https://mobilecamcnc.github.io/products/'
     }]
     
