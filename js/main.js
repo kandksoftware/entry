@@ -24,12 +24,12 @@
       name:'Macro Converter CNC',
       desc:' - convert CNC macro into a pure g-code',
       link:'https://kandksoftware.github.io/macro-converter-cnc/'
-    },{
+    }/*,{
       image:'macro-router-icon',
       name:'Macro Router CNC',
       desc:' - use a power of macro for CNC routers',
       link:'https://kandksoftware.github.io/macro-router-cnc/'
-    },{
+    }*/,{
       image:'mobile_cam_icon',
       name:'Mobile CAM CNC',
       desc:' - the fastest and easiest conversational software for Fanuc / Haas',
