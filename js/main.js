@@ -53,7 +53,7 @@
 
     this.build = function(){
       const app = $('app')
-      if(app !== null){
+      if(app){
         app.classList.remove('hide')
       }
       return `<h2>Select your software:</h2>` + this.data.map(d => template(d)).join('')
